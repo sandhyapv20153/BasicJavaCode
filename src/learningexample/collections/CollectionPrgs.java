@@ -5,7 +5,7 @@ import java.util.*;
 
 public class CollectionPrgs {
 
-	public void ArrayListFunction() {
+	public void ListUsingArrayListFunction() {
 		// TODO Auto-generated method stub
 
 
@@ -32,7 +32,7 @@ public class CollectionPrgs {
 		
 	}
 	
-	public void LinkedListFunction() {
+	public void ListUsingLinkedListFunction() {
 		// TODO Auto-generated method stub
 
 		List<String> list = new LinkedList<String>();
@@ -45,24 +45,63 @@ public class CollectionPrgs {
 		list.remove(3);
 		Iterator itr = list.iterator();
 		String str;
-		System.out.println("******* ArrayList Iteration started *******");
+		System.out.println("******* LinkedList Iteration started *******");
 		while(itr.hasNext())
 		{
 			str = itr.next().toString();
 			System.out.println(str);
 		}
-		System.out.println("******* ArrayList Iteration Ended *******");
+		System.out.println("******* LinkedList Iteration Ended *******");
 		System.out.println("The third element of the linkedlist is :"+list.get(2));
 		System.out.println("The size of the linkedlist is :"+list.size());
 		
 	}
 	
+	public void QueueUsingLinkedList()
+	{
+		Queue<String> q = new LinkedList<String>();
+		q.add("One");
+		q.add("Two");
+		q.add("Three");
+		q.add("Four");
+		System.out.println("The size of the queue is :"+q.size());
+		Iterator itr= q.iterator();
+		String str;
+		System.out.println("******* queue using LinkedList Iteration started *******");
+		while(itr.hasNext())
+		{
+			str = itr.next().toString();
+			System.out.println(str);
+		}		
+		System.out.println("******* queue using LinkedList Iteration ended *******");
+		q.remove(3);//this does not work
+		q.remove("Three");
+		itr=q.iterator();
+		System.out.println("******* queue using LinkedList Iteration after remove *******");
+		while(itr.hasNext())
+		{
+			str = itr.next().toString();
+			System.out.println(str);
+		}		
+		System.out.println("******* queue using LinkedList Iteration ended *******");
+		System.out.println("The head of the queue before poll is :"+q.poll());
+		System.out.println("The head of the queue after poll is :"+q.peek());
+		System.out.println("The size of the queue is :"+q.size());
 		
+	}
+	
+	public void MapUsingHashMap()
+	{
+		
+	}
+	
+	
 	public static void main(String[] args)
 	{
 		CollectionPrgs obj = new CollectionPrgs ();
-		obj.ArrayListFunction();
-		obj.LinkedListFunction();
+		obj.ListUsingArrayListFunction();
+		obj.ListUsingLinkedListFunction();
+		obj.QueueUsingLinkedList();
 
 
 	}
