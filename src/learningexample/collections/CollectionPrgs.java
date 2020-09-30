@@ -124,7 +124,15 @@ public class CollectionPrgs {
 		Hashtable<Integer,String> table = new Hashtable<Integer,String>();
 		table.put(01, "One");
 		table.put(02, "Two");
+		table.put(03, "Three");
+		table.put(04, "Four");
 		System.out.println("the hastable.."+table.get(01));
+		Set<Integer> keys = table.keySet();
+		for(Integer key:keys) {
+			System.out.println("The Key:"+key+"\tValue:"+table.get(key));
+		}
+		
+
 		
 	}
 	
