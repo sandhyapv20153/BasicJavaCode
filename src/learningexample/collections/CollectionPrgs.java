@@ -69,6 +69,8 @@ public class CollectionPrgs {
 			System.out.println(itr.next());
 		}
 		System.out.println("************* ArrayList ended *************\n");
+		
+		
 	}
 	
 	public void QueueUsingLinkedList()
