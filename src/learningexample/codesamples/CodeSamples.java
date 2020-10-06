@@ -15,7 +15,7 @@ public class CodeSamples {
 		initialArray.add("Three");
 		initialArray.add("Two");
 		
-		System.out.println("Initial Array : "+initialArray);
+		System.out.println("\nInitial Array : "+initialArray);
 		
 		String str;
 	
@@ -29,11 +29,9 @@ public class CodeSamples {
 				}
 			}
 		}
-		
 		System.out.println("After removing duplicates"+initialArray);
-		
-		
 	}
+	
 	
 	//Removes duplicates from a Array of integers and prints them.
 	public void removeDuplicateElementFunction()
@@ -46,7 +44,7 @@ public class CodeSamples {
 		intArray.add(2);
 		intArray.add(4);
 		
-		System.out.println("Initial Array :"+intArray);
+		System.out.println("\nInitial Array :"+intArray);
 		
 		int intValue;
 		
@@ -64,10 +62,36 @@ public class CodeSamples {
 		}
 		
 		System.out.println("After removing duplicates :"+intArray);
+	}
+	
+	
+	//
+	public void sortStrings()
+	{
+		ArrayList<String> initialList = new ArrayList();
+		initialList.add("Apple");
+		initialList.add("orange");
+		initialList.add("Orange");
+		initialList.add("Water");
+		initialList.add("water");
+		initialList.add("Pineapple");
+		initialList.add("paper");
+		initialList.add("Juice");
+		initialList.add("Avocado");
 		
+		System.out.println("\nOriginal List : "+initialList);
 		
+		Collections.sort(initialList);
+		
+		System.out.println("Sorted List :"+ initialList);
+		
+		Collections.sort(initialList,String.CASE_INSENSITIVE_ORDER);
+		
+		System.out.println("Case Insensitive Sorted List : "+ initialList);
 		
 	}
+	
+	
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -78,7 +102,7 @@ public class CodeSamples {
 		
 		cObj.removeDuplicateElementFunction();
 		
-		
+		cObj.sortStrings();		
 		
 		
 	}
