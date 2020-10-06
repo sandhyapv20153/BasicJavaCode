@@ -2,20 +2,10 @@ package learningexample.codesamples;
 
 import java.util.*;
 
-//1- Write code to filter duplicate elements from an array and print as a list?
-//2- Write code to sort the list of strings using Java collection?
-//3- Write a function to reverse a number in Java?
-//4- Write a method to check prime no. in Java?
-//5- Write a Java program to find out the first two max values from an array?
-//6- Write a Java program to find the longest substring from a given string which doesn’t contain any duplicate characters?
-//7- Write Java code to get rid of multiple spaces from a string?
-//8- Write Java code to identify a number as Palindrome?
-//9- Write Java code to swap two numbers without using a temporary variable?
-//10- Write a Java program to demonstrate string reverse with and without StringBuffer class?
-
 
 public class CodeSamples {
 	
+	//Removes duplicates from a Array of strings and prints them.
 	public void printListAfterRemovingDuplicates()
 	{
 		ArrayList<String> initialArray = new ArrayList();
@@ -45,6 +35,7 @@ public class CodeSamples {
 		
 	}
 	
+	//Removes duplicates from a Array of integers and prints them.
 	public void removeDuplicateElementFunction()
 	{
 		ArrayList<Integer> intArray = new ArrayList();
