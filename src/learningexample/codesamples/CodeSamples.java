@@ -65,7 +65,7 @@ public class CodeSamples {
 	}
 	
 	
-	//
+	//Sort a list of strings using java collection
 	public void sortStrings()
 	{
 		ArrayList<String> initialList = new ArrayList();
@@ -91,7 +91,49 @@ public class CodeSamples {
 		
 	}
 	
+	//Reverse a number in java
+	public void reverseNumber()
+	{
+		int initialNumber = 123456;
+		System.out.println("\nThe initial number :"+initialNumber);
+		int reversedNumber=0;
+		while (initialNumber!=0) {
+			reversedNumber = (reversedNumber * 10 )+ ( initialNumber%10);
+			initialNumber = initialNumber /10;
+		}
+		
+		System.out.println("The reversed number :"+reversedNumber);
+	}
 	
+	//Verify if the number is a prime number. 
+	//Prime Number = a natural number greater than 1 that is not a product of two smaller natural numbers
+	public void primeNumberCheck(int number)
+	{
+		boolean isPrime = true;
+		if(number==1)
+		{
+			isPrime = false;
+		}
+		else 
+		{
+			for ( int i=2;i<number; i++)
+			{
+				if((number%i)==0)
+				{
+					isPrime = false;
+					break;
+				}
+			}
+		}
+		if(isPrime==true)
+		{
+			System.out.println("\nThe number is prime");
+		}
+		else
+		{
+			System.out.println("\nThe number is not prime");
+		}
+	}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -102,7 +144,11 @@ public class CodeSamples {
 		
 		cObj.removeDuplicateElementFunction();
 		
-		cObj.sortStrings();		
+		cObj.sortStrings();	
+		
+		cObj.reverseNumber();
+		
+		cObj.primeNumberCheck(15);
 		
 		
 	}
