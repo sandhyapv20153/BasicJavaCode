@@ -20,6 +20,7 @@ public class Car extends Vehicle{
 		vObj.VehicleType ="Four Wheeler";
 		System.out.println("Vehicle type is :"+vObj.VehicleType);
 		vObj.run();
+		vObj.test();
 		
 		
 		//DownCasting - TypeCasting of a parent object to child object.
@@ -29,8 +30,7 @@ public class Car extends Vehicle{
 		cObj.year = 2018;
 		System.out.println(cObj.model);
 		System.out.println(cObj.year);
-		
-		
+				
 	
 	}
 

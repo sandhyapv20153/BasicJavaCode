@@ -8,5 +8,10 @@ public class Vehicle {
 	{
 		System.out.println("Driving a vehicle");
 	}
+	
+	protected void test()
+	{
+		System.out.println("testing.....");
+	}
 
 }

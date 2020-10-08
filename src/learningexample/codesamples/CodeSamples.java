@@ -65,6 +65,7 @@ public class CodeSamples {
 	}
 	
 	
+	
 	//Sort a list of strings using java collection
 	public void sortStrings()
 	{
@@ -91,6 +92,8 @@ public class CodeSamples {
 		
 	}
 	
+	
+	
 	//Reverse a number in java
 	public void reverseNumber()
 	{
@@ -105,6 +108,8 @@ public class CodeSamples {
 		System.out.println("The reversed number :"+reversedNumber);
 	}
 	
+	
+	
 	//Verify if the number is a prime number. 
 	//Prime Number = a natural number greater than 1 that is not a product of two smaller natural numbers
 	public void primeNumberCheck(int number)
@@ -116,7 +121,7 @@ public class CodeSamples {
 		}
 		else 
 		{
-			for ( int i=2;i<number; i++)
+			for ( int i=2;i<(number/2); i++)
 			{
 				if((number%i)==0)
 				{
@@ -134,7 +139,54 @@ public class CodeSamples {
 			System.out.println("\nThe number is not prime");
 		}
 	}
-
+	
+	
+	//Find the highest and second highest number
+	public void findMaxValue(List<Integer> numberArray)
+	{
+		Integer highestMax=0;
+		Integer tempValue=0;
+		Integer secondHighestMax =0;
+		
+		Iterator<Integer> itr = numberArray.iterator();
+		while(itr.hasNext())
+		{
+			tempValue = (Integer)itr.next();
+			if(highestMax<tempValue)
+			{
+				secondHighestMax = highestMax;
+				highestMax = tempValue;
+			}
+		}
+		System.out.println("\nThe max value is "+highestMax);
+		System.out.println("The second highest value is "+secondHighestMax);
+	}
+	
+	//Find if a string is a palindrome.
+	public void palindrome(String str)
+	{
+		String strArray="";
+		int size=str.length();
+		
+		System.out.println("\n");
+		
+		for(int i=size-1;i>=0;i--)
+		{	
+			strArray= strArray + str.charAt(i);
+		}
+		
+		if(str.equalsIgnoreCase(strArray))
+		{
+			System.out.println(strArray+" is a palindrome");
+		}
+		else
+		{
+			System.out.println(strArray+" is not a palindrome");
+		}
+		
+		
+	}
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
@@ -148,7 +200,17 @@ public class CodeSamples {
 		
 		cObj.reverseNumber();
 		
-		cObj.primeNumberCheck(15);
+		cObj.primeNumberCheck(73);
+		
+		List<Integer> arrayNumber = new ArrayList();
+		arrayNumber.add(1);
+		arrayNumber.add(22);
+		arrayNumber.add(5);
+		arrayNumber.add(99);
+		cObj.findMaxValue(arrayNumber);
+		
+		cObj.palindrome("kayak");
+		cObj.palindrome("Text");
 		
 		
 	}
