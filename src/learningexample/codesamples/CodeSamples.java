@@ -8,7 +8,7 @@ public class CodeSamples {
 	//Removes duplicates from a Array of strings and prints them.
 	public void printListAfterRemovingDuplicates()
 	{
-		ArrayList<String> initialArray = new ArrayList();
+		ArrayList<String> initialArray = new ArrayList<String>();
 		initialArray.add("One");
 		initialArray.add("Two");
 		initialArray.add("One");
@@ -36,7 +36,7 @@ public class CodeSamples {
 	//Removes duplicates from a Array of integers and prints them.
 	public void removeDuplicateElementFunction()
 	{
-		ArrayList<Integer> intArray = new ArrayList();
+		ArrayList<Integer> intArray = new ArrayList<Integer>();
 		intArray.add(1);
 		intArray.add(2);
 		intArray.add(3);
@@ -69,7 +69,7 @@ public class CodeSamples {
 	//Sort a list of strings using java collection
 	public void sortStrings()
 	{
-		ArrayList<String> initialList = new ArrayList();
+		ArrayList<String> initialList = new ArrayList<String>();
 		initialList.add("Apple");
 		initialList.add("orange");
 		initialList.add("Orange");
@@ -132,11 +132,11 @@ public class CodeSamples {
 		}
 		if(isPrime==true)
 		{
-			System.out.println("\nThe number is prime");
+			System.out.println("\nThe number "+number+" is prime");
 		}
 		else
 		{
-			System.out.println("\nThe number is not prime");
+			System.out.println("\nThe number "+number+" is not prime");
 		}
 	}
 	
@@ -177,11 +177,11 @@ public class CodeSamples {
 		
 		if(str.equalsIgnoreCase(strArray))
 		{
-			System.out.println(strArray+" is a palindrome");
+			System.out.println(str+" is a palindrome");
 		}
 		else
 		{
-			System.out.println(strArray+" is not a palindrome");
+			System.out.println(str+" is not a palindrome");
 		}
 		
 		
@@ -202,7 +202,7 @@ public class CodeSamples {
 		
 		cObj.primeNumberCheck(73);
 		
-		List<Integer> arrayNumber = new ArrayList();
+		List<Integer> arrayNumber = new ArrayList<Integer>();
 		arrayNumber.add(1);
 		arrayNumber.add(22);
 		arrayNumber.add(5);
