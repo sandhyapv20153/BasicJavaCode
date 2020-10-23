@@ -1,55 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk-11.0.8">
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
 		<attributes>
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/MyEclipseWorkspace/JavaProject/jars/activation-1.1.jar"/>
-	<classpathentry kind="lib" path="C:/MyEclipseWorkspace/JavaProject/jars/btf-1.2.jar"/>
-	<classpathentry kind="lib" path="C:/MyEclipseWorkspace/JavaProject/jars/commons-codec-1.9.jar"/>
-	<classpathentry kind="lib" path="C:/MyEclipseWorkspace/JavaProject/jars/commons-lang3-3.4.jar"/>
-	<classpathentry kind="lib" path="C:/MyEclipseWorkspace/JavaProject/jars/commons-logging-1.2.jar"/>
-	<classpathentry kind="lib" path="C:/MyEclipseWorkspace/JavaProject/jars/groovy-3.0.3.jar"/>
-	<classpathentry kind="lib" path="C:/MyEclipseWorkspace/JavaProject/jars/groovy-json-3.0.3.jar"/>
-	<classpathentry kind="lib" path="C:/MyEclipseWorkspace/JavaProject/jars/groovy-xml-3.0.3.jar"/>
-	<classpathentry kind="lib" path="C:/MyEclipseWorkspace/JavaProject/jars/guava-16.0.1.jar"/>
-	<classpathentry kind="lib" path="C:/MyEclipseWorkspace/JavaProject/jars/hamcrest-2.1.jar"/>
-	<classpathentry kind="lib" path="C:/MyEclipseWorkspace/JavaProject/jars/httpclient-4.5.3.jar"/>
-	<classpathentry kind="lib" path="C:/MyEclipseWorkspace/JavaProject/jars/httpcore-4.4.6.jar"/>
-	<classpathentry kind="lib" path="C:/MyEclipseWorkspace/JavaProject/jars/httpmime-4.5.3.jar"/>
-	<classpathentry kind="lib" path="C:/MyEclipseWorkspace/JavaProject/jars/jackson-annotations-2.11.1.jar"/>
-	<classpathentry kind="lib" path="C:/MyEclipseWorkspace/JavaProject/jars/jackson-core-2.11.1.jar"/>
-	<classpathentry kind="lib" path="C:/MyEclipseWorkspace/JavaProject/jars/jackson-coreutils-1.9.jar"/>
-	<classpathentry kind="lib" path="C:/MyEclipseWorkspace/JavaProject/jars/jackson-databind-2.11.1.jar"/>
-	<classpathentry kind="lib" path="C:/MyEclipseWorkspace/JavaProject/jars/jakarta.activation-api-1.2.2.jar"/>
-	<classpathentry kind="lib" path="C:/MyEclipseWorkspace/JavaProject/jars/jakarta.xml.bind-api-2.3.3.jar"/>
-	<classpathentry kind="lib" path="C:/MyEclipseWorkspace/JavaProject/jars/jaxb-impl-2.3.3.jar"/>
-	<classpathentry kind="lib" path="C:/MyEclipseWorkspace/JavaProject/jars/joda-time-2.9.7.jar"/>
-	<classpathentry kind="lib" path="C:/MyEclipseWorkspace/JavaProject/jars/jopt-simple-5.0.3.jar"/>
-	<classpathentry kind="lib" path="C:/MyEclipseWorkspace/JavaProject/jars/json-path-4.3.1.jar"/>
-	<classpathentry kind="lib" path="C:/MyEclipseWorkspace/JavaProject/jars/json-path-4.3.1-javadoc.jar"/>
-	<classpathentry kind="lib" path="C:/MyEclipseWorkspace/JavaProject/jars/json-path-4.3.1-sources.jar"/>
-	<classpathentry kind="lib" path="C:/MyEclipseWorkspace/JavaProject/jars/json-schema-core-1.2.10.jar"/>
-	<classpathentry kind="lib" path="C:/MyEclipseWorkspace/JavaProject/jars/json-schema-validator-2.2.10.jar"/>
-	<classpathentry kind="lib" path="C:/MyEclipseWorkspace/JavaProject/jars/json-schema-validator-4.3.1.jar"/>
-	<classpathentry kind="lib" path="C:/MyEclipseWorkspace/JavaProject/jars/json-schema-validator-4.3.1-javadoc.jar"/>
-	<classpathentry kind="lib" path="C:/MyEclipseWorkspace/JavaProject/jars/json-schema-validator-4.3.1-sources.jar"/>
-	<classpathentry kind="lib" path="C:/MyEclipseWorkspace/JavaProject/jars/jsr305-3.0.1.jar"/>
-	<classpathentry kind="lib" path="C:/MyEclipseWorkspace/JavaProject/jars/libphonenumber-8.0.0.jar"/>
-	<classpathentry kind="lib" path="C:/MyEclipseWorkspace/JavaProject/jars/mailapi-1.4.3.jar"/>
-	<classpathentry kind="lib" path="C:/MyEclipseWorkspace/JavaProject/jars/msg-simple-1.1.jar"/>
-	<classpathentry kind="lib" path="C:/MyEclipseWorkspace/JavaProject/jars/rest-assured-4.3.1.jar"/>
-	<classpathentry kind="lib" path="C:/MyEclipseWorkspace/JavaProject/jars/rest-assured-4.3.1-javadoc.jar"/>
-	<classpathentry kind="lib" path="C:/MyEclipseWorkspace/JavaProject/jars/rest-assured-4.3.1-sources.jar"/>
-	<classpathentry kind="lib" path="C:/MyEclipseWorkspace/JavaProject/jars/rest-assured-common-4.3.1-javadoc.jar"/>
-	<classpathentry kind="lib" path="C:/MyEclipseWorkspace/JavaProject/jars/rest-assured-common-4.3.1-sources.jar"/>
-	<classpathentry kind="lib" path="C:/MyEclipseWorkspace/JavaProject/jars/rhino-1.7.7.1.jar"/>
-	<classpathentry kind="lib" path="C:/MyEclipseWorkspace/JavaProject/jars/tagsoup-1.2.1.jar"/>
-	<classpathentry kind="lib" path="C:/MyEclipseWorkspace/JavaProject/jars/uri-template-0.9.jar"/>
-	<classpathentry kind="lib" path="C:/MyEclipseWorkspace/JavaProject/jars/xml-path-4.3.1-javadoc.jar"/>
-	<classpathentry kind="lib" path="C:/MyEclipseWorkspace/JavaProject/jars/xml-path-4.3.1-sources.jar"/>
-	<classpathentry kind="lib" path="C:/MyEclipseWorkspace/JavaProject/jars/json-20200518.jar"/>
+	<classpathentry kind="lib" path="C:/personalworkspace/BasicJavaCode/jars/json-20200518.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
