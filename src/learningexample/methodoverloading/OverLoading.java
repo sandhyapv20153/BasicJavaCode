@@ -1,5 +1,7 @@
 package learningexample.methodoverloading;
 
+//Polymorphism - is defined as the same code giving different behaviours.
+//Static polymorphism is achieved by method overloading.
 public class OverLoading {
 	
 	private int run()
