@@ -1,6 +1,7 @@
 package learningexample.codesamples;
 
 import java.util.*;
+import java.util.Random;
 
 public class CodeSamples2 {
 	
@@ -88,8 +89,8 @@ public class CodeSamples2 {
 		if(firstStr.length() == secondStr.length())
 		{
 			
-			char firstChar[] = firstStr.toCharArray();
-			char secondChar[]= secondStr.toCharArray();
+			char firstChar[] = firstStr.toLowerCase().toCharArray();
+			char secondChar[]= secondStr.toLowerCase().toCharArray();
 			
 			System.out.println("firstChar:"+ new String(firstChar) +"\tsecondChar:"+new String(secondChar));
 			
@@ -132,6 +133,89 @@ public class CodeSamples2 {
 		System.out.println("The time complexity is : O(" + length +")");
 	}
 	
+	
+	public void palindrome(String str)
+	{
+		int length = str.length();
+		String revStr="";
+		
+		for (int i=length-1;i>=0;i--)
+		{
+			revStr=revStr + str.charAt(i);
+			
+		}
+		
+		if(str.equalsIgnoreCase(revStr))
+		{
+			System.out.println(str +" is a palindrome");
+		}
+		
+	}
+	
+	
+	public void fizzBuzz()
+	{
+		for(int i=1;i<=20;i++)
+		{
+			if((i%3)==0 && (i%5)==0)
+			{
+				System.out.println(i +"\t fizzBuzz");
+			}
+			else if ((i%5)==0)
+			{
+				System.out.println(i +"\t Buzz");
+			}
+			else if ((i%3)==0)
+			{
+				System.out.println(i +"\t Fizz");
+			}
+			else
+			{
+				System.out.println(i);
+			}
+			
+				
+		}
+	}
+	
+	
+	public void orderArray()
+	{
+		Integer intArray[] = new Integer[10];
+		Random rand = new Random();
+		int temp = 0;
+		
+		System.out.println("Unsorted numbers ...");
+		for (int i=0;i<10;i++)
+		{
+			intArray[i]=rand.nextInt(100);
+			System.out.println(intArray[i]);
+		}
+		
+		for(int i=0;i<10;i++)
+		{
+			for (int j=i+1;j<10;j++)
+			{
+				if((intArray[i]%2)==0 && (intArray[j]%2)!=0)
+				{
+					temp = intArray[i];
+					intArray[i]=intArray[j];
+					intArray[j]=temp;
+				}
+			}
+		}
+		
+		System.out.println("Sorted numbers.....");
+		for (int i=0;i<10;i++)
+		{
+			System.out.println(intArray[i]);
+		}
+		
+		
+		
+		
+	}
+	
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -161,8 +245,8 @@ public class CodeSamples2 {
 		
 		
 		System.out.println("\nAnagram...........");
-		String firstString = "cinema";
-		String secondString = "iceman";
+		String firstString = "Cinema";
+		String secondString = "Iceman";
 		Obj.checkAnagram(firstString,secondString);
 		
 		
@@ -171,6 +255,16 @@ public class CodeSamples2 {
 		Obj.reverseString(testString);
 		
 
+		System.out.println("\nPalindrome...........");
+		String str = "level";
+		Obj.palindrome(str);
+		
+		System.out.println("\nFizzBuzz problem...........");
+		Obj.fizzBuzz();
+		
+		System.out.println("\nOrder an array by random numbers and then order by odd and even...........");
+		Obj.orderArray();
+		
 	}
 
 }
